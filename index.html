@@ -16,30 +16,32 @@
         <div class="home">
           <h2 class="home__title">Home</h2>
           <div class="home__scorebg">
-            <h2 class="home__score">0</h2>
+            <h2 id="home__score" class="home__score">0</h2>
           </div>
           <div class="home__points">
-            <button class="point__One">+ 1</button>
-            <button class="point__two">+ 2</button>
-            <button class="point__three">+ 3</button>
+            <button onclick="home_1()">+ 1</button>
+            <button onclick="home_2()">+ 2</button>
+            <button onclick="home_3()">+ 3</button>
           </div>
         </div>
         <div class="guest">
           <h2 class="guest__title">Guest</h2>
           <div class="guest__scorebg">
-            <h2 class="guest__score">0</h2>
+            <h2 id="guest__score" class="guest__score">0</h2>
           </div>
           <div class="guest__points">
-            <button class="point__One">+ 1</button>
-            <button class="point__two">+ 2</button>
-            <button class="point__three">+ 3</button>
+            <button onclick="guest_1()">+ 1</button>
+            <button onclick="guest_2()">+ 2</button>
+            <button onclick="guest_3()">+ 3</button>
           </div>
         </div>
       </article>
     </main>
     <footer>
-      <button class="newgame">newgame</button>
-      <button class="reset">reset</button>
+      <button id="newgame" class="newgame" onclick="newgame()">newgame</button>
+      <button id="reset" class="reset" onclick="reset()">reset</button>
     </footer>
+    <script src="js/index.js"></script>
   </body>
+
 </html>
